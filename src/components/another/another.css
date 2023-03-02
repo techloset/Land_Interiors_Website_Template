@@ -1,0 +1,29 @@
+@media screen and (min-width:768px){
+    
+    img.imageFull{
+      
+        margin-left:30% ;
+        width: 70%; 
+    
+
+    }
+    div.mediaQuery{
+        height: 608px;
+        top: 10%;
+    }
+  
+    .parentDiv{
+        text-align:center;
+        height: 724px;
+    }
+}
+@media screen and (max-width:767px) {
+  .mediaQuery{
+    height:100%;
+
+  }
+  .parentDiv{
+    height:400px ;
+  }
+  
+}
