@@ -9,7 +9,7 @@ import Img7 from "./image 28.png";
 const Studio = () => {
   return (
     <div className="flex flex-col items-center  gap-10 ">
-      <h1 className="font-medium md:text-4xl max-md:text-3xl mt-3">Our Interior Design Products</h1>
+      <h1 className="font-medium md:text-4xl max-md:text-3xl max-sm:text-2xl mt-3">Our Interior Design Products</h1>
       <div
         className=" grid md:grid-cols-4 max-md:grid-cols-2 grid-rows-2 w-10/12 gap-2 "
         style={{

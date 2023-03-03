@@ -24,7 +24,7 @@ width: 50%;
 .m{
     margin-bottom: 1000px ;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     img.width-Height{
         margin-top: 0;
         width: 100%;

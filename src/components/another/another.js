@@ -2,11 +2,25 @@ import React from "react";
 import image from "./image.png";
 import './another.css'
 const Another = ({shouldAnimate}) => {
+  let className=''
+  if(window.innerWidth>=768){
+         
+    className=shouldAnimate>=1200&& shouldAnimate<=1900?'animate__animated animate__fadeInLeft':'invisible'
+     
+    }
+   else if(window.innerWidth<768 && window.innerWidth>=640){
+    className=shouldAnimate>=1090&& shouldAnimate<=1575?'animate__animated animate__fadeInLeft':'invisible'
+
+   }
+   else if(window.innerWidth<640){
+    className=shouldAnimate>=1300&& shouldAnimate<=1860?'animate__animated animate__fadeInLeft':'invisible'
+
+   }
   return (
     <div className="relative right-0  parentDiv ">
     
         <div
-          className={`absolute box-border flex flex-col md:gap-5  md:items-center max-md:px-3 justify-center max-md:bottom-0   left-0 bg-white z-20 bg-opacity-75 lg:w-7/12 max-lg:w-8/12 mediaQuery  ${shouldAnimate>=1200&& shouldAnimate<=1900?'animate__animated animate__fadeInLeft':''}`}
+          className={`absolute box-border flex flex-col md:gap-5  md:items-center max-md:px-3 justify-center max-md:bottom-0   left-0 bg-white z-20 bg-opacity-75 lg:w-7/12 max-lg:w-8/12 mediaQuery  ${className}`}
           style={{
             
            

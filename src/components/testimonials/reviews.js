@@ -35,7 +35,7 @@ const slide=React.useRef(null)
     };
   return (
     <div className='flex items-center flex-col  gap-10 '>
-      <p className='font-medium text-4xl mt-10'>Our Happy Costumers</p>
+      <p className='font-medium md:text-4xl max-md:text-3xl max-sm:text-2xl  mt-10'>Our Happy Costumers</p>
       <p className='md:w-2/3 max-md:w-11/12 text-center ' >Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet 
 luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
 

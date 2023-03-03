@@ -6,6 +6,7 @@ import Img4 from './image 19.png'
 import './projects.css'
 import { useEffect ,useState} from 'react'
 const Projects = ({shouldAnimate}) => {
+  
 
   return (
     
@@ -20,7 +21,7 @@ const Projects = ({shouldAnimate}) => {
 
 
 
-<div  className= {`box  max-lg:w-5/6 max-lg:text-justify flex flex-col lg:items-center lg:justify-center lg:p-3 lg:absolute right-0 bg-white z-20   bg-opacity-75    lg:text-center ${shouldAnimate>2260&& shouldAnimate<=3190?'animate__animated animate__fadeInLeft':''}`}>
+<div  className= {`box  max-lg:w-5/6 max-lg:text-justify flex flex-col lg:items-center lg:justify-center lg:p-3 lg:absolute right-0 bg-white z-20   bg-opacity-75    lg:text-center ${shouldAnimate>2260&& shouldAnimate<=3190&&window.innerWidth>=1024?'animate__animated animate__fadeInLeft':''}`}>
   <p id='projectsSection' className='font-medium text-3xl leading-9   '>Our Projects</p>
 
 
