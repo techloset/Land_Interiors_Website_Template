@@ -25,8 +25,9 @@ function App() {
         function handleScroll() {
           const scrollPos = window.scrollY;
           setShouldAnimate(scrollPos );
+          window.removeEventListener("scroll", handleScroll);
         }
-      
+
   return (
 <>
 

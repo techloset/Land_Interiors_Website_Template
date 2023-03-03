@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-100 flex max-lg:pl-10 box-border justify-center max-lg:items-center max-xl:gap-20 xl:gap-28 p-5  ' style={{height:'400px'}}>
+    <div className='bg-gray-100 flex max-lg:pl-10 box-border justify-center max-lg:items-center max-xl:gap-20 xl:gap-28 p-5 lg:h-[auto] ' >
       <ul  className='w-1/3 flex flex-col gap-3 py-3 '>
-        <li><img src={webLogo} className='max-lg:pl-12' alt="" /></li>
+        <li><img src={webLogo} className='max-lg:pl-[20%] max-sm:pl-[30%] max-md:pb-6' alt="" /></li>
       
         <li className='max-lg:hidden '><p>We introduce our selves as  LAND Interior and Architectural Design Consultancy - one of the best interior designers in Chennai. Chennai Luxury Interior and Architectural Design Consultancy has challenged the conventional way of interior designing and given new dimensions to the art of interior designing.</p></li>
-        <li className='flex gap-3  max-lg:pt-20  '>
+        <li className='flex gap-3  max-pt-20 max-md:pt-10 '>
              <img src={logo1}  alt="" />
              <img src={logo2}   alt="" />
              <img src={logo3}  alt="" />
@@ -52,12 +52,12 @@ const Footer = () => {
       </ul>
       <ul className='lg:self-end flex flex-col lg:gap-10 '>
         <li className=' max-lg:hidden' >Get in touch</li>
-        <li className='max-lg:absolute max-lg:text-center' style={{left:'33%'}}>
+        <li className='max-lg:absolute max-lg:text-center max-lg:left-[32%]  max-lg:right-[50%] ' >
            <li>
             
              landinteriors@gmail.com 
             </li>
-            <li className=''>
+            <li className='whitespace-nowrap'>
 
 +91 98987 65656
             </li>
