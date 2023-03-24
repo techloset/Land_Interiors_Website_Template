@@ -5,7 +5,6 @@ import Img3 from './image 15.png';
 import Img4 from './image 14.png';
 import Img5 from './image 21.png';
 import Img6 from './image 20.png';
-import { useRef } from 'react';
 
 import React, { Component } from "react";
 
@@ -26,13 +25,25 @@ const slide=React.useRef(null)
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: 5,
       slidesToScroll: 1,
       dots:false,
-      autoplay:true,
+      autoplay:false,
       autoplaySpeed:1000,
       swipe:true,
       responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            autoplay:true,
+            autoplaySpeed:1000,
+          }
+          
+    },
         {
           breakpoint: 1024,
           settings: {
@@ -57,20 +68,32 @@ const slide=React.useRef(null)
           }
           
     },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            autoplay:true,
+            autoplaySpeed:1000,
+          }
+          
+    },
  
   ]
   }
     
     
     return (
-      <div className='my-14'>
+      <div className='relative ml-[10%] sm:ml-[5.2%] '>
    
       <div     className='flex  justify-center items-center flex-col gap-10  '>
    
-        <h1 className='blogs font-medium text-4xl  '>Blogs</h1>
+        <h1 className='blogs font-medium text-4xl mt-[6.25rem]  self-start '>Blogs</h1>
        
     
-        <div className='sliderParent w-5/6 relative'
+        <div className='sliderParent w-[105%] ml-[5%] relative'
         
       
         >
@@ -80,7 +103,7 @@ const slide=React.useRef(null)
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9 max-sm:text-lg  text-black'>Modern Interior</p>
-<p className='text-justify w-11/12 max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+<p className='text-justify w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
@@ -91,7 +114,7 @@ consectetur adipiscing elit ut
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9 max-sm:text-lg text-black'>Exterior Project</p>
-<p className='md:w-10/12 max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
+<p className='w-[70%] sm:w-[80%] max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
@@ -102,7 +125,7 @@ consectetur adipiscing elit ut
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9  text-black max-sm:text-lg'>Grey Beauty</p>
-<p className='md:w-10/12 max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
+<p className='w-[70%] sm:w-[80%] max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
@@ -113,7 +136,18 @@ consectetur adipiscing elit ut
 
             <img src={Img6} alt="" />
             <p className='font-medium text-2xl leading-9 max-lg:text-lg text-black'>Plantation interior</p>
-            <p className='md:w-10/12 max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+            <p className='w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit ut
+ aliquam,</p>
+              </div>
+             
+            </div>
+            <div  >
+              <div className='mr-5'>
+
+            <img src={Img6} alt="" />
+            <p className='font-medium text-2xl leading-9 max-lg:text-lg text-black'>Plantation interior</p>
+            <p className='w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
               </div>
@@ -124,26 +158,29 @@ consectetur adipiscing elit ut
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9 max-lg:text-lg text-black'>Role of furnitures</p>
-<p className='md:w-10/12 max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+<p className='w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
              
             </div>
           </Slider>
-          <button onClick={()=>slide?.current?.slickPrev()} className='absolute previous'style={{}}  >
+          {/* <button onClick={()=>slide?.current?.slickPrev()} className='absolute previous'style={{}}  >
           <img src={arrowPrev} alt="" className='  max-md:w-12 max-sm:w-8  ' />
 
-          </button>
-          <button onClick={()=>slide?.current?.slickNext()} className='absolute Next' >
-<img src={arrowNext} alt="" className='max-md:w-12 max-sm:w-8'/>
-          </button>
+          </button> */}
+         
         </div>
         <button style={{width:'200px',height: '60px'
-  }} className="text-white font-bold  bg-purple-900    ">View All</button>
+  }} className="text-white font-bold max-lg:hidden  bg-purple-900    ">View All</button>
+{/* button.Next{
+    right: 0%;bottom:48%;
 
+} */}
       </div>
-      
+      <button onClick={()=>slide?.current?.slickNext()} className='absolute right-0 bottom-[38%] lg:bottom-[47%]' >
+<img src={arrowNext} alt="" className=''/>
+          </button>
       </div>
     );
 

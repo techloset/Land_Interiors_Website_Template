@@ -5,16 +5,16 @@ import Another from '../another/another'
 import Do from '../whatWeDoSection/do'
 import bg1 from './bg.png'
 
-const About = ({shouldAnimate}) => {
+const About = () => {
   return (
     <>
-  <Section {...{shouldAnimate}}></Section>
-<Interior {...{shouldAnimate}}></Interior>
-  <div style={{ backgroundImage: `url(${bg1})` }} className='bg-cover bg-center'>
+  <Section ></Section>
+<Interior ></Interior>
+  <div style={{ backgroundImage: `url(${bg1})` }} className='bg-cover bg-no-repeat bg-center'>
 
-<Another {...{shouldAnimate}}></Another>
+<Another ></Another>
 
-<Do {...{shouldAnimate}}/>
+<Do />
   </div >
 
     </>
