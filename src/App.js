@@ -34,15 +34,15 @@ function App() {
 <Nav {...{shouldAnimate}}></Nav>
     <Outlet>
     </Outlet>
-<About {...{shouldAnimate}}/>
+<About />
 
-<div style={{ backgroundImage: `url(${bg2})` }} className='bg-cover bg-center '>
+<div style={{ backgroundImage: `url(${bg2})` }} className='bg-cover  bg-no-repeat bg-center '>
 
-<Project {...{shouldAnimate}}></Project> 
- <Blog {...{shouldAnimate}}></Blog>
+<Project ></Project> 
+ <Blog ></Blog>
 </div>
-<Studio {...{shouldAnimate}}></Studio>
-<Reviews {...{shouldAnimate}}>
+<Studio ></Studio>
+<Reviews >
 
 </Reviews>
 <Contact></Contact>

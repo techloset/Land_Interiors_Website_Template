@@ -8,10 +8,10 @@ import Img6 from "./image 27.png";
 import Img7 from "./image 28.png";
 const Studio = () => {
   return (
-    <div className="flex flex-col items-center  gap-10 ">
-      <h1 className="font-medium md:text-4xl max-md:text-3xl max-sm:text-2xl mt-3">Our Interior Design Products</h1>
+    <div className="flex flex-col items-center justify-center  gap-12 ">
+      <h1 className="font-medium md:text-4xl max-md:text-3xl max-sm:text-xl mt-10 max-md:self-start max-md:ml-[15%] ">Our Interior Design Products</h1>
       <div
-        className=" grid md:grid-cols-4 max-md:grid-cols-2 grid-rows-2 w-10/12 gap-2 "
+        className=" grid md:grid-cols-4 max-md:grid-cols-2 grid-rows-2 w-10/12 gap-4 "
         style={{
         
           maxHeight:'80vh'
@@ -35,7 +35,7 @@ purus sit amet luctus venenatis, lectus magna fringilla urna,
  porttitor rhoncus dolor purus non enim
       </p>
       <button style={{width:'200px',height: '60px'
-  }} className="text-white font-bold  bg-purple-900    ">View All</button>
+  }} className="text-white font-bold  bg-purple-900 whitespace-nowrap    ">View All</button>
     </div>
   );
 };
