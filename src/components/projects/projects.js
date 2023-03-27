@@ -29,7 +29,7 @@ const Projects = () => {
      <p  className='   text-[18px] mb-[3.4375rem]'> magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla</p>
 
 
-   <button  className="text-white font-bold self-center px-[5.5rem] py-[1.3125rem] bg-purple-900 whitespace-nowrap  ">View All</button>
+   <button  className="text-white font-bold self-center px-[2rem] py-[1rem]  sm:px-[5.5rem] sm:py-[1.3125rem] bg-purple-900 whitespace-nowrap  ">View All</button>
 
 </div>
 </div>
