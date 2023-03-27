@@ -86,14 +86,16 @@ const slide=React.useRef(null)
     
     
     return (
-      <div className='relative ml-[10%] sm:ml-[5.2%] '>
+      <div className='relative ml-[2.5rem] lg:ml-[6rem] mb-10 lg:mb-0'>
    
-      <div     className='flex  justify-center items-center flex-col gap-10  '>
+      <div     className=' flex flex-col justify-center items-center'>
    
-        <h1 className='blogs font-medium text-4xl mt-[6.25rem]  self-start '>Blogs</h1>
+        <h1 className='blogs font-medium text-4xl mt-[6.25rem]  self-start mb-10'>Blogs</h1>
        
-    
-        <div className='sliderParent w-[105%] ml-[5%] relative'
+    <div className='!w-full !overflow-hidden '>
+
+
+        <div className='sliderParent w-[95%] sm:w-[110%]  relative'
         
       
         >
@@ -103,7 +105,7 @@ const slide=React.useRef(null)
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9 max-sm:text-lg  text-black'>Modern Interior</p>
-<p className='text-justify w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+<p className='text-justify  w-[90%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
@@ -114,7 +116,7 @@ consectetur adipiscing elit ut
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9 max-sm:text-lg text-black'>Exterior Project</p>
-<p className='w-[70%] sm:w-[80%] max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
+<p className=' w-[90%] max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
@@ -125,7 +127,7 @@ consectetur adipiscing elit ut
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9  text-black max-sm:text-lg'>Grey Beauty</p>
-<p className='w-[70%] sm:w-[80%] max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
+<p className=' w-[90%] max-lg:text-sm  '>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
@@ -136,7 +138,7 @@ consectetur adipiscing elit ut
 
             <img src={Img6} alt="" />
             <p className='font-medium text-2xl leading-9 max-lg:text-lg text-black'>Plantation interior</p>
-            <p className='w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+            <p className=' w-[90%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
               </div>
@@ -147,7 +149,7 @@ consectetur adipiscing elit ut
 
             <img src={Img6} alt="" />
             <p className='font-medium text-2xl leading-9 max-lg:text-lg text-black'>Plantation interior</p>
-            <p className='w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+            <p className=' w-[90%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
               </div>
@@ -158,30 +160,28 @@ consectetur adipiscing elit ut
 
 <img src={Img6} alt="" />
 <p className='font-medium text-2xl leading-9 max-lg:text-lg text-black'>Role of furnitures</p>
-<p className='w-[70%] sm:w-[80%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
+<p className=' w-[90%] max-lg:text-sm'>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit ut
  aliquam,</p>
   </div>
              
             </div>
           </Slider>
-          {/* <button onClick={()=>slide?.current?.slickPrev()} className='absolute previous'style={{}}  >
-          <img src={arrowPrev} alt="" className='  max-md:w-12 max-sm:w-8  ' />
-
-          </button> */}
-         
+   
         </div>
-        <button style={{width:'200px',height: '60px'
-  }} className="text-white font-bold max-lg:hidden  bg-purple-900    ">View All</button>
-{/* button.Next{
-    right: 0%;bottom:48%;
+        <div className='text-center'>
 
-} */}
+        <button style={{width:'200px',height: '60px'
+  }} className="text-white font-bold max-lg:hidden  bg-purple-900   my-10  m-auto ">View All</button>
+
       </div>
-      <button onClick={()=>slide?.current?.slickNext()} className='absolute right-0 bottom-[38%] lg:bottom-[47%]' >
+  </div>
+      <button onClick={()=>slide?.current?.slickNext()} className='absolute right-0 top-[54%] lg:top-[43%] ' >
 <img src={arrowNext} alt="" className=''/>
           </button>
       </div>
+    </div>
+
     );
 
 }
